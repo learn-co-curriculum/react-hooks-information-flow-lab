@@ -27,8 +27,9 @@ App
     └── Item
 ```
 
-Your goal is to refactor the code from the previous lab to match the component
-structure in the image above. As you work on refactoring the code, keep in mind:
+Your goal is to refactor the code from the previous shopping list lab to match
+the component structure in the image above. As you work on refactoring the code,
+keep in mind:
 
 - Which components should hold **state**? Which components need access to that state?
 - How can we update state in one component from a child component?
@@ -52,11 +53,17 @@ Create a `Header` component by refactoring the `<header>` element out of the
 `App` component. Clicking on the `<button>` inside of the `Header` component
 should still toggle dark mode on and off.
 
+You will need to pass a _callback function_ as a prop called `onDarkModeClick`
+to the `Header` component in order for the test to pass.
+
 ### Filter
 
 Create a `Filter` component by refactoring the `<select>` element out of the
 `ShoppingList` component. Changing the selection in the dropdown should still
 change which items are displayed in the shopping list.
+
+You will need to pass a _callback function_ as a prop called `onCategoryChange`
+to the `Filter` component in order for the test to pass.
 
 ## Resources
 
