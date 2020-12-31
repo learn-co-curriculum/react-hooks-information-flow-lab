@@ -5,7 +5,7 @@
 Last time we worked on the Shopping List app, we ended up with the following
 component hierarchy:
 
-```
+```txt
 App
 └── ShoppingList
     ├── Item
@@ -15,9 +15,9 @@ App
 
 However, it would probably make more sense to break the app down more like this:
 
-![demo](images/demo.png)
+![demo](https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-information-flow-lab/master/images/demo.png)
 
-```
+```txt
 App
 ├── Header
 └── ShoppingList
