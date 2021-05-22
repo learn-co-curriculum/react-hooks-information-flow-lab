@@ -1,5 +1,10 @@
 # React Information Flow Lab
 
+## Learning Goals
+
+- Use callback functions to update state in a parent component
+- Move state based on which components need access to it
+
 ## Overview
 
 Last time we worked on the Shopping List app, we ended up with the following
@@ -15,7 +20,7 @@ App
 
 However, it would probably make more sense to break the app down more like this:
 
-![demo](https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-information-flow-lab/master/images/demo.png)
+![demo](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-information-flow-lab/demo.png)
 
 ```txt
 App
