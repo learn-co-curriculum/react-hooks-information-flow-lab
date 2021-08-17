@@ -5,7 +5,7 @@
 - Use callback functions to update state in a parent component
 - Move state based on which components need access to it
 
-## Overview
+## Introduction
 
 Last time we worked on the Shopping List app, we ended up with the following
 component hierarchy:
@@ -48,7 +48,7 @@ Also, remember what we learned in the previous lesson:
 - Components of the same level (sibling components) cannot communicate directly!
   We can only communicate up and down the component tree. So if multiple
   components need to share the same information, that state should live in the
-  parent (or a more general ancestor) component.
+  parent component (or a more general ancestor).
 
 ## Deliverables
 
