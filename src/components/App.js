@@ -3,7 +3,6 @@ import ShoppingList from "./ShoppingList";
 import itemData from "../data/items";
 
 function App() {
-  const [items, setItems] = useState(itemData);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   function handleDarkModeClick() {
@@ -18,7 +17,7 @@ function App() {
           {isDarkMode ? "Dark" : "Light"} Mode
         </button>
       </header>
-      <ShoppingList items={items} />
+      <ShoppingList items={itemData} />
     </div>
   );
 }
