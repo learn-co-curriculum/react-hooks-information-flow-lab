@@ -7,13 +7,13 @@ function App() {
   const [items, setItems] = useState(itemData);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  function handleDarkModeClick() {
+  function onDarkModeClick() {
     setIsDarkMode((isDarkMode) => !isDarkMode);
   }
 
   return (
     <div className={"App " + (isDarkMode ? "dark" : "light")}>
-      <Header isDarkMode={isDarkMode} onDarkModeClick={handleDarkModeClick} />
+      <Header isDarkMode={isDarkMode} onDarkModeClick={onDarkModeClick} />
       <ShoppingList items={items} />
     </div>
   );
